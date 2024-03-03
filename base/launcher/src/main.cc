@@ -66,7 +66,7 @@ int main(int argc, char const** argv) {
   launcher_settings launcher_opt;
 
   std::set<std::string> disabled_by_default{
-      "cc",     "csa",    "gbfs", "nigiri", "paxforecast", "paxmon",
+      "cc",     "csa",    "gbfs", "nigiri", "paxforecast", "paxmon",   "photon",
       "raptor", "revise", "ris",  "rt",     "tiles",       "tripbased"};
   utl::erase_if(module_opt.modules_, [&](std::string const& m) {
     return disabled_by_default.contains(m);
